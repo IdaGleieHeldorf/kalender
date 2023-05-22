@@ -6,30 +6,44 @@
 
 <!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
 <head>
-    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/ofe7wks.css">
 
-    <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Event kalender</title>
 
-    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div>
-
+<div class="container">
+    <h2>Image Map with Visible Pins and Popups</h2>
+    <div class="image-container">
+        <img src="images/kort.png" alt="Your Image" class="img-responsive">
+        <div class="pin pin-1">
+            <div class="popup">
+                <h3>Pin 1</h3>
+                <p>This is the popup text for pin 1.</p>
+            </div>
+        </div>
+        <div class="pin pin-2">
+            <div class="popup">
+                <h3>Pin 2</h3>
+                <p>This is the popup text for pin 2.</p>
+            </div>
+        </div>
+        <!-- Add more pins as needed -->
+    </div>
 </div>
 
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
