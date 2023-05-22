@@ -88,4 +88,55 @@ body{
   z-index: 1; /* Sørger for, at billedet er foran gridet */
 }
 
+/*find os*/
+
+.container {
+	text-align: center;
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+}
+
+.pin {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.pin-1 {
+	top: 30%;
+	left: 40%;
+}
+
+.pin-2 {
+	top: 60%;
+	left: 70%;
+}
+
+.pin:hover .popup {
+	display: block;
+}
+
+.popup {
+	position: absolute;
+	top: 100%;
+	left: -50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	z-index: 2;
+	display: none;
+}
+
+.popup h3 {
+	margin-top: 0;
+}
 
