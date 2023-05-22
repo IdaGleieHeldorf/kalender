@@ -17,3 +17,42 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+h1{
+	font-family: "montserrat", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+body{
+	color: #663800;
+	background-color: #FFFDF4;
+}
+
+.card-block {
+	font-size: 1em;
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	border: none;
+	border-top: 1px solid rgba(34, 36, 38, .1);
+	box-shadow: none;
+}
+
+.btn {
+	margin-top: auto;
+	background-color: #FFDC4F;
+	border-color: white;
+
+}
+
+
+.card {
+	font-size: 1em;
+	overflow: hidden;
+	border: none;
+	border-radius: .0rem;
+	box-shadow: 0 1px 3px 0 #663800, 0 0 0 1px #663800;
+	margin-top: 20px;
+	margin-left: 20px;
+}
