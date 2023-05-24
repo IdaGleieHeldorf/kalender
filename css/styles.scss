@@ -90,27 +90,33 @@ body{
 
 /*find os*/
 
-.container {
+
+
+.container map{
 	text-align: center;
+
 }
 
-.image-container {
+.image-container map {
 	position: relative;
 	display: inline-block;
+
 }
 
 .pin {
 	position: absolute;
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
 	background-color: red;
 	border-radius: 50%;
 	cursor: pointer;
+	border: double;
 }
 
 .pin-1 {
-	top: 30%;
-	left: 40%;
+	top: 36.5%;
+	left: 31.5%;
+
 }
 
 .pin-2 {
@@ -126,8 +132,9 @@ body{
 	position: absolute;
 	top: 100%;
 	left: -50%;
+	width: 20rem;
 	transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.9);
 	color: #fff;
 	padding: 10px;
 	border-radius: 5px;

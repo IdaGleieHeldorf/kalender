@@ -27,24 +27,71 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div class="container">
-    <h2>Image Map with Visible Pins and Popups</h2>
-    <div class="image-container">
-        <img src="images/kort.png" alt="Your Image" class="img-responsive">
-        <div class="pin pin-1">
-            <div class="popup">
-                <h3>Pin 1</h3>
-                <p>This is the popup text for pin 1.</p>
-            </div>
+<style>
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .pin {
+        animation: pulse 2s infinite;
+    }
+
+    .pin:hover {
+        animation-play-state: paused;
+    }
+</style>
+
+
+
+
+
+
+<div class="container map text-center">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
+            <img src="images/kort%20(1).png" alt="Your Image" class="img-fluid">
         </div>
-        <div class="pin pin-2">
-            <div class="popup">
-                <h3>Pin 2</h3>
-                <p>This is the popup text for pin 2.</p>
-            </div>
-        </div>
-        <!-- Add more pins as needed -->
     </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
+            <div class="pin pin-1">
+                <div class="popup">
+                    <h3>Vinoteque Marittima</h3>
+                    <p>Find os her!</p>
+                    <img src="images/marittima-logo.jpg" alt="Popup Image">
+                    <a href="https://www.google.com/maps/dir//Vinoteque+Marittima,+Sandgade+2,+4800+Nyk%C3%B8bing+Falster/@54.770908,11.8610383,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47ad314a68774c8d:0xce64c5cad30a4e67!2m2!1d11.863227!2d54.770908">Rutevejledning</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
+            <div class="pin pin-2">
+                <div class="popup">
+                    <h3>Pin 2</h3>
+                    <p>This is the popup text for pin 2.</p>
+                    <img src="your-image-url.jpg" alt="Popup Image">
+                    <a href="https://example.com">Visit Example</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add more pins as needed -->
 </div>
+
+
+
+
 </body>
 </html>
