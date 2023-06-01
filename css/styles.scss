@@ -18,10 +18,27 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+
 h1{
 	font-family: "montserrat", sans-serif;
 	font-weight: 700;
 	font-style: normal;
+	line-height: 1.5;
+}
+
+h5{
+	font-family: "montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+p{
+	font-family: "helvetica",sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
 }
 
 body{
@@ -36,114 +53,442 @@ body{
 	background-color: #FFDC4F; /* Tilpas farven efter behov */
 }
 
-
-.card-block {
-	font-size: 1em;
-	position: relative;
-	padding-left: 0px;
-	margin: 0;
-	border: none;
-	box-shadow: none;
-
-}
-
-.btn {
-	margin-top: auto;
-	background-color: #FFDC4F;
-	border-color: white;
-}
-
-
-.card {
-	font-size: 1em;
-	overflow: hidden;
-	border: none;
-	border-radius: .0rem;
-	box-shadow: 0 1px 3px 0 #663800, 0 0 0 1px #663800;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-.pic{
-	height: 140px;
-	width: 90;
-}
-
 .circle{
 	margin-right: 0px;
 }
 
-.container {
-  position: relative;
+/*NAVBAR*/
+.navbar{
+	background-color: #FFFDF4;
+
+}
+
+.navbar-brand img{
+	width: 140px;
+	height: auto;
+
+}
+
+.navbar-nav{
+	display: flex;
+	align-items: end;
+
+}
+
+.navbar .navbar-nav .nav-link{
+	color: #663800;
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: .5em 1em;
+
+}
+
+.navbar .navbar-nav .nav-link:hover{
+	text-decoration: underline;
+
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-brand img{
+		width: 175px;
+		height: auto;
+
+	}
+
+	.navbar-brand{
+		margin-right: 0;
+		padding: 0 1em;
+
+	}
+
+	.navbar-nav{
+		display: flex;
+		align-items: center;
+
+	}
 }
 
 
-.overlay-image {
- position: absolute;
-  bottom: 0;
-  right: 140px;
-	height: 250px;
+/*Forside*/
+.forsideoverlay{
+	position: absolute;
+	bottom: -40px;
+	right: -50px;
+	height: auto;
+	z-index: 1;
+
+
+}
+
+.forsideror{
+	position: absolute;
+	bottom: -80px;
+	left: -50px;
+	height: auto;
+	z-index: 1;
+
+
+}
+
+/*Kalender*/
+
+
+
+
+/*OmOs*/
+
+.half-circle-om-os{
+	width: 50px;
+	height: 50px;
+	border-radius: 0 80% 80% 0;
+	background-color: #FFDC4F;
+
+}
+
+.circle{
+	margin-right: 0;
+
+}
+
+.indhold-container{
+	min-height: 750px;
+
+}
+
+.ikon-boks{
+	justify-content: center;
+	max-width: 100%;
+	display: none;
+
+}
+
+.ikon{
+	max-width: 100%;
+	border-radius: 10px 10px 0 0;
+	display: none;
+
+}
+
+.om-os-card-body{
+	border:0;
+	box-shadow:none;
+	outline:none;
+	background-color:#a5bddc;
+	color:#fffdf4;
+	width:100%;
+
+}
+
+.facebook-koncept{
+	font-size:4rem;
+	text-align: center;
+	color: #3b5085;
+	padding-left: 45%;
+
+}
+
+.facebook-koncept:hover{
+	color: #a5bddc;
+	cursor: pointer;
+
+}
+
+.btn-om-os{
+	background-color:#fff192;
+	margin-top:auto;
+	font-family:"montserrat",sans-serif;
+	font-weight:700;
+	font-style:normal;
+	width:100%;
+	z-index: 1;
+
+}
+
+.btn-om-os:hover{
+	background-color: #FFDC4F;
+
+}
+
+.ror-container {
+	z-index: -1;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	padding-right: 0;
+	justify-content: end;
+
+
+}
+
+.flasker-container {
+	position: absolute;
+	max-width: 100%;
+	z-index: -1;
+	left: 0;
+	top: 50%;
+	padding-left: 0;
+	padding-right: 0;
+
+}
+
+.ror-billede{
+	width: 270px;
+	height: 400px;
+
+}
+
+.flasker-billede{
+	width: 270px;
+	height: 400px;
+
+}
+
+
+
+@media screen and (min-width: 577px) {
+
+
+
+	.ror-billede{
+		width: 320px;
+		height: 450px;
+
+	}
+
+	.flasker-billede{
+		width: 320px;
+		height: 450px;
+
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+
+	.ror-billede{
+		width: 370px;
+		height: 500px;
+	}
+
+	.flasker-billede{
+		width: 370px;
+		height: 500px;
+	}
+
+	.indhold-container{
+		min-height: 900px;
+	}
+
+}
+
+
+
+@media screen and (min-width: 993px) {
+
+	.facebook-koncept{
+		padding-left: 38%;
+	}
+
+	.half-circle-om-os{
+		width: 65px;
+		height: 65px;
+	}
+
+	.ror-billede{
+		width: 420px;
+		height: 550px;
+	}
+
+	.flasker-billede{
+		width: 420px;
+		height: 550px;
+	}
+
+	.btn-om-os {
+		border-radius: 0 0 10px 10px;
+	}
+
+	.ikon-boks{
+		display: block;
+	}
+
+	.ikon{
+		display: block;
+	}
+
+	.btn-om-os:hover{
+		background-color: #fff192;
+	}
+}
+
+/* footer */
+
+.footer{
+	flex-direction: column;
+	background-color: #fff192;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.kontakt{
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	min-width: 30%;
+
+}
+
+.some-ikoner{
+	font-size:2rem;
+	text-align: center;
+	color:#663800;
+
+}
+
+
+.some-ikoner-boks{
+	flex-direction: row;
+
+}
+
+.logo-gif-boks{
+	border-radius: 50%;
+	align-items: center;
+	min-width: 20%;
+
+}
+
+.logogif{
 	width: 200px;
+	border-radius: 50%;
+	align-items: center;
 
-  z-index: 1; /* Sørger for, at billedet er foran gridet */
 }
+
+.logogif-md-lg{
+	max-width: 100%;
+	border-radius: 50%;
+
+}
+
+.aabning{
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	min-width: 30%;
+
+}
+
+
+
+
+.footer-md-lg {
+	flex-direction: row;
+	background-color: #fff192;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+
+
+
+/*FindOs*/
+
+.red-text {
+	color: red; /* Replace with the desired color */
+}
+
+
 
 /*find os*/
 
-
-
-.container map{
-	text-align: center;
-
-}
-
-.image-container map {
+.map {
 	position: relative;
 	display: inline-block;
+
 
 }
 
 .pin {
 	position: absolute;
-	width: 18px;
-	height: 18px;
+	width: 20px;
+	height: 20px;
 	background-color: red;
-	border-radius: 50%;
 	cursor: pointer;
 	border: double;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
 }
 
 .pin-1 {
-	top: 36.5%;
-	left: 31.5%;
-
+	top: 40%;
+	left: 21%;
 }
 
 .pin-2 {
-	top: 60%;
-	left: 70%;
+	top: 29%;
+	left: 25%;
 }
 
-.pin:hover .popup {
-	display: block;
+
+
+.pinWrapper{
+	position: absolute;
+
+	&:hover .popup{
+		display: block;
+		cursor: pointer;
+	}
 }
+
 
 .popup {
 	position: absolute;
 	top: 100%;
 	left: -50%;
 	width: 20rem;
-	transform: translateX(-50%);
+	transform: translateX(-20%);
 	background-color: rgba(0, 0, 0, 0.9);
-	color: #fff;
+	color: #FFDC4F;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 10px;
 	font-size: 12px;
 	z-index: 2;
 	display: none;
+	cursor: pointer;
+
 }
 
-.popup h3 {
+.popup h2 {
 	margin-top: 0;
 }
 
+a.link {
+	color: inherit;
+	text-decoration: none;
+	font-size: small;
+	font-family: "montserrat", sans-serif;
+	font-weight: bold;
+}
+
+p.paragraph{
+	font-size: medium;
+}

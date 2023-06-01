@@ -27,14 +27,52 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
+<!--Nav-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid sticky-top">
+        <a class="navbar-brand d-lg-none" href="#">
+            <img src="images/logo.png" alt="Vinoteque Marittima Events logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">FORSIDE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EVENTS</a>
+                </li>
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                    <img src="images/logo.png" alt="Vinoteque Marittima Events logo">
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OM OS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FIND OS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Nav-->
+
+<!--Indhold-->
+
+<!-- pin pulsering -->
+
 <style>
+
     @keyframes pulse {
         0% {
             transform: scale(1);
             opacity: 1;
         }
         50% {
-            transform: scale(1.2);
+            transform: scale(1.5);
             opacity: 0.8;
         }
         100% {
@@ -50,47 +88,128 @@
     .pin:hover {
         animation-play-state: paused;
     }
+
 </style>
 
-
-
-
-
-
-<div class="container map text-center">
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
-            <img src="images/kort%20(1).png" alt="Your Image" class="img-fluid">
+<!-- Overskrift -->
+<div class="container mb-5">
+    <div class="row mt-4">
+        <div class="col-auto circle">
+            <div class="half-circle"></div>
+        </div>
+        <div class="col gy-4 mt-4">
+            <h1>FIND OS</h1>
+        </div>
+        <div class="col-10 gy-4 mt-3">
+            <h2>Klik på <span class="red-text">punkterne</span> og find en rutevejledning</h2>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
-            <div class="pin pin-1">
-                <div class="popup">
-                    <h3>Vinoteque Marittima</h3>
-                    <p>Find os her!</p>
-                    <img src="images/marittima-logo.jpg" alt="Popup Image">
-                    <a href="https://www.google.com/maps/dir//Vinoteque+Marittima,+Sandgade+2,+4800+Nyk%C3%B8bing+Falster/@54.770908,11.8610383,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47ad314a68774c8d:0xce64c5cad30a4e67!2m2!1d11.863227!2d54.770908">Rutevejledning</a>
-                </div>
+</div>
+
+<!-- Kort -->
+
+<div class="container">
+    <div class="map">
+        <img src="images/kort%20(1).png" alt="Your Image" class="img-fluid mb-5">
+        <div class="pin-1 pinWrapper">
+            <div class="pin"></div>
+            <div class="popup">
+                <h3>Vinoteque Marittima</h3>
+                <p class="paragraph">Find os på Sandgade 2, 4800 Nykøbing F.</p>
+                <img src="images/marittima-logo.jpg" alt="Popup Image">
+                <a href="https://www.google.com/maps/dir//Vinoteque+Marittima,+Sandgade+2,+4800+Nyk%C3%B8bing+Falster/@54.770908,11.8610383,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47ad314a68774c8d:0xce64c5cad30a4e67!2m2!1d11.863227!2d54.770908" class="link">Rutevejledning Her!</a>
+            </div>
+        </div>
+
+        <div class="pin-2 pinWrapper">
+            <div class="pin"></div>
+            <div class="popup">
+                <h3>Parkering</h3>
+                <p class="paragraph">Her kan du parkere gratis</p>
+                <img src="images/parkering.png" alt="Popup Image">
+                <a href="https://www.google.com/maps/dir//Vinoteque+Marittima,+Sandgade+2,+4800+Nyk%C3%B8bing+Falster/@54.770908,11.8610383,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47ad314a68774c8d:0xce64c5cad30a4e67!2m2!1d11.863227!2d54.770908" class="link">Rutevejledning Her!</a>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
-            <div class="pin pin-2">
-                <div class="popup">
-                    <h3>Pin 2</h3>
-                    <p>This is the popup text for pin 2.</p>
-                    <img src="your-image-url.jpg" alt="Popup Image">
-                    <a href="https://example.com">Visit Example</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add more pins as needed -->
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+<div class="container-fluid px-0 ">
+
+    <div class="row footer p-5 d-md-none">
+
+        <div class="col-12 p-5 logo-gif-boks text-center">
+            <img src="images/marittimagif.gif" class="logogif" alt="Marittima Logo">
+        </div>
+
+        <div class="col-12 d-flex kontakt">
+            <h5>KONTAKT OS</h5>
+            <p>+45 54 85 03 55 <br>
+                vinoteque-m@rius.dk</p>
+            <div class="d-flex some-ikoner-boks">
+                <a href="https://www.facebook.com/vinotequemarittima">
+                    <i class="bi bi-facebook some-ikoner px-2"></i>
+                </a>
+                <a href="https://www.instagram.com/vinotequemarittima/">
+                    <i class="bi bi-instagram some-ikoner px-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 d-flex pt-4 aabning ">
+            <h5>ÅBNINGSTIDER</h5>
+            <p>Torsdag: 16:00-23:00
+                <br>Fredag:  16:00-23:00
+                <br>Lørdag:  16:00-23:00</p>
+        </div>
+
+    </div>
+
+    <div class="row footer-md-lg p-5 d-none d-md-block d-md-flex">
+
+        <div class="col-2 d-flex kontakt">
+            <h5>KONTAKT OS</h5>
+            <p>+45 54 85 03 55 <br>
+                vinoteque-m@rius.dk</p>
+            <div class="d-flex some-ikoner-boks">
+                <a href="https://www.facebook.com/vinotequemarittima">
+                    <i class="bi bi-facebook some-ikoner px-2"></i>
+                </a>
+                <a href="https://www.instagram.com/vinotequemarittima/">
+                    <i class="bi bi-instagram some-ikoner px-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-2 logo-gif-boks text-center">
+            <img src="images/marittimagif.gif" class="logogif-md-lg d-flex" alt="Marittima Logo">
+        </div>
+
+        <div class="col-2 d-flex aabning ">
+            <h5>ÅBNINGSTIDER</h5>
+            <p>Torsdag: 16:00-23:00
+                <br>Fredag:  16:00-23:00
+                <br>Lørdag:  16:00-23:00</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
